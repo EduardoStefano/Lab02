@@ -27,7 +27,7 @@
             <HBox alignment="CENTER" prefHeight="77.0" prefWidth="493.0">
                <children>
                   <Label alignment="CENTER" prefHeight="38.0" prefWidth="98.0" text="AlienText" />
-                  <TextField alignment="CENTER" prefHeight="28.0" prefWidth="187.0" promptText="Insert the text..." />
+                  <TextField fx:id="txtWord" alignment="CENTER" prefHeight="28.0" prefWidth="187.0" promptText="Insert the text..." />
                   <Button mnemonicParsing="false" onAction="#doTranslate" prefHeight="31.0" prefWidth="89.0" text="Button">
                      <HBox.margin>
                         <Insets left="20.0" />
@@ -46,7 +46,7 @@
                   <Insets top="20.0" />
                </VBox.margin>
             </HBox>
-            <TextArea prefHeight="149.0" prefWidth="493.0" text="Welcome to alien dictionary v2019" />
+            <TextArea fx:id="txtResult" prefHeight="149.0" prefWidth="493.0" text="Welcome to alien dictionary v2019" />
             <Button alignment="CENTER" mnemonicParsing="false" onAction="#doReset" prefHeight="31.0" prefWidth="104.0" text="Clear text">
                <VBox.margin>
                   <Insets left="350.0" top="50.0" />

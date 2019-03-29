@@ -19,6 +19,10 @@ public class Word {
 	public String getTranslation() {
 		return translation;
 	}
+	
+	public void setTranslation(String translation) {
+		this.translation = translation;
+	}
 
 	@Override
 	public int hashCode() {
