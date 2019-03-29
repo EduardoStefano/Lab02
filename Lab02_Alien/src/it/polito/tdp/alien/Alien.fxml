@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="343.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.alien.AlienController">
-   <top>
-      <Label text="Lab 1 - Alien Translator" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="10.0" />
-         </BorderPane.margin>
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Label>
-   </top>
+<BorderPane prefHeight="343.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.alien.AlienController">
    <padding>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
    </padding>
+   <center>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="493.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="506.0" text="Lab 1 - Alien Translator">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="77.0" prefWidth="493.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="38.0" prefWidth="98.0" text="AlienText" />
+                  <TextField alignment="CENTER" prefHeight="28.0" prefWidth="187.0" promptText="Insert the text..." />
+                  <Button mnemonicParsing="false" onAction="#doTranslate" prefHeight="31.0" prefWidth="89.0" text="Button">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ImageView fitHeight="28.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@../../../../../rsc/Alien-512.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TextArea prefHeight="149.0" prefWidth="493.0" text="Welcome to alien dictionary v2019" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#doReset" prefHeight="31.0" prefWidth="104.0" text="Clear text">
+               <VBox.margin>
+                  <Insets left="350.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
 </BorderPane>

@@ -29,7 +29,18 @@ public class AlienController {
     private Button btnTranslate;
     @FXML
     private Button btnReset;
-        
+      
+    
+    
+    @FXML
+    void doReset(ActionEvent event) {
+
+    }
+
+    @FXML
+    void doTranslate(ActionEvent event) {
+
+    }
     
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
@@ -38,18 +49,6 @@ public class AlienController {
     	assert btnTranslate != null : "fx:id=\"bntTranslate\" was not injected: check your FXML file 'Alien.fxml'.";
     	assert btnReset != null : "fx:id=\"btnReset\" was not injected: check your FXML file 'Alien.fxml'.";
     	
-    }
-  
-    
-    @FXML
-    void doTranslate(ActionEvent event) {
-    	    	
-    }
-    
-    
-    @FXML
-    void doReset(ActionEvent event) {
-
     }
     
 }
